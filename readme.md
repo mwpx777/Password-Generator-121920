@@ -25,7 +25,7 @@ This is the third weekly challenge assignment.  In this challenge, we are tasked
 
 ## Website Link
 
-("https://mwpx777.github.io/Mark-Peterson-Portfolio/")
+("https://mwpx777.github.io/Password-Generator-121920/")
 
 ## Help
 

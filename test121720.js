@@ -7,51 +7,51 @@ let passwordlength
 //generate password function
 
 var generatePassword = function(){
- passwordLength = parseInt(prompt ("Please type password length from 8-128 characters"));{
+  passwordLength = parseInt(prompt ("Please type password length from 8-128 characters"));{
     
-  while (passwordLength <=7 || passwordLength >=128 || !passwordLength){
-      alert("Please enter a valid number between 8 and 128");
-      return generatePassword();
-  };
+      while (passwordLength <=7 || passwordLength >=128 || !passwordLength){
+          alert("Please enter a valid number between 8 and 128");
+          return generatePassword();
+      };
 
-    passwordUppercase = confirm("Would you like uppercase letters? Click 'OK' for yes, Click 'Cancel' for no.");
+        passwordUppercase = confirm("Would you like uppercase letters? Click 'OK' for yes, Click 'Cancel' for no.");
 
-      alert("Thanks for your response!");
-      
-    passwordLowercase = confirm("Would you like lowercase letters?  Click 'OK' for yes, Click 'Cancel' for no.");
-        alert("Thanks for your response!");
+            alert("Thanks for your response!");
+          
+        passwordLowercase = confirm("Would you like lowercase letters?  Click 'OK' for yes, Click 'Cancel' for no.");
+            alert("Thanks for your response!");
+            
+        passwordNumbers = confirm("Would you like numbers?  Click 'OK' for yes, Click 'Cancel' for no.");
+            alert("Thanks for your response!");
         
-    passwordNumbers = confirm("Would you like numbers?  Click 'OK' for yes, Click 'Cancel' for no.");
-        alert("Thanks for your response!");
-    
-    passwordSymbols = confirm("Would you like symbols?  Click 'OK' for yes, Click 'Cancel' for no.");
-        alert("Thanks for your response!");        
-    }
-
- let passwordNew = '';
-
-  if (passwordUppercase === true){
-    passwordNew += uppercase;
-  }
-  if (passwordLowercase === true){
-    passwordNew += lowercase;
-  }
-  if (passwordNumbers === true){
-    passwordNew += numbers;
+        passwordSymbols = confirm("Would you like symbols?  Click 'OK' for yes, Click 'Cancel' for no.");
+            alert("Thanks for your response!");        
   }
 
-  if (passwordSymbols === true){
-    passwordNew += symbols;
-  }
+    let passwordNew = '';
 
- //password loop
-  let password = "" ;
+      if (passwordUppercase === true){  
+        passwordNew += uppercase;
+      }
+      if (passwordLowercase === true){
+        passwordNew += lowercase;
+      }
+      if (passwordNumbers === true){
+        passwordNew += numbers;
+      }
 
-  for(i=0; i< passwordLength; i++){
-   password += passwordNew.charAt(Math.floor(Math.random() * passwordNew.length));
+      if (passwordSymbols === true){
+        passwordNew += symbols;
+      }
 
-  }
-  return password;
+    //password loop
+      let password = "" ;
+
+      for(i=0; i< passwordLength; i++){
+      password += passwordNew.charAt(Math.floor(Math.random() * passwordNew.length));
+
+      }
+      return password;
 }
 //password loop end
 
